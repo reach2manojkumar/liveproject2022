@@ -5,9 +5,10 @@
     <classes>
       <class name="testcase_01.TestCase_LP_01">
         <methods>
-          <include name="beforeLoad"/>
-          <include name="veriftpage_03"/>
-          <include name="afterLoad"/>
+          <include name="openCreate"/>
+          <include name="setup"/>
+          <include name="AfterSuite"/>
+          <include name="loadConfig"/>
         </methods>
       </class> <!-- testcase_01.TestCase_LP_01 -->
     </classes>

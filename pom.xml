@@ -56,6 +56,19 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M4</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>${xmlFiles}</suiteXmlFile>
+					</suiteXmlFiles>
+					<systemPropertyVariables>
+						<appURL>${url}</appURL>
+					</systemPropertyVariables>
+				</configuration>
+			</plugin>
 
 		</plugins>
 	</build>
@@ -158,6 +171,12 @@
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>3.0.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-remote-driver</artifactId>
+			<version>4.3.0</version>
 		</dependency>
 
 
