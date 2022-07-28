@@ -96,13 +96,13 @@
 			<artifactId>webdrivermanager</artifactId>
 			<version>5.2.0</version>
 		</dependency>
-		<dependency>
-			<!-- Testng -->
+	<!-- Testng	<dependency>
+			 
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.6.1</version>
 			<scope>test</scope>
-		</dependency>
+		</dependency> -->
 		<!-- jcommander to avoid noclassdefinition exception-->
 		<dependency>
 			<groupId>com.beust</groupId>
