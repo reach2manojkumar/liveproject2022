@@ -83,6 +83,20 @@ public class FeStepdefinition {
 	public void check_the_whether_it_redirected_to_loginpage_or_not() {
 
 		System.out.println("present");
+		try {
+			WebElement warnText = driver.findElement(By.xpath("//*[contains(text(),'Invalid Login details or Your Password might have expired. ')]"));
+			if(warnText.isDisplayed()) {
+				assertTrue("warn text is showing ", true);
+			}
+		} catch (Exception e) {
+			
+			System.out.println("Warning text is not showing");
+
+		}
+	
+		
+		
+		
 		/*
 		 * try { logWarn =
 		 * driver.findElement(By.xpath("//*[contains(text(),'Invalid Login details ')]")
@@ -97,6 +111,14 @@ public class FeStepdefinition {
 	public void verify_warning_text_is_present_or_not() {
 
 		System.out.println("adasd");
+	
+		
+		
+		
+		
+		
+		
+		
 		/*
 		 * try { logWarn =
 		 * driver.findElement(By.xpath("//*[contains(text(),'Invalid Login details ')]")
